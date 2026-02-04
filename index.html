@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="af">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Erika Turvey Art Gallery</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      background: #0e0e0e;
+      color: #ffffff;
+    }
+
+    header {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: #bbbbbb;
+      font-size: 1.1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .art {
+      background: #161616;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .art img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .art h3 {
+      margin: 5px 0;
+      font-size: 1.1rem;
+    }
+
+    .art p {
+      color: #aaaaaa;
+      font-size: 0.9rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 18px;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+
+    .btn:hover {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #777;
+      font-size: 0.8rem;
+    }
+  </style>
 </head>
-<body style="margin:0;font-family:Arial,Helvetica,sans-serif;background:#111;color:#fff;padding:40px;">
-  <h1>Erika Turvey Art Gallery</h1>
-  <p>DIT WERK. 🎉</p>
+
+<body>
+
+  <header>
+    <h1>Erika Turvey Art Gallery</h1>
+    <p>Originale werke · Prints · Kommissies</p>
+  </header>
+
+  <section class="gallery">
+
+    <div class="art">
+      <img src="https://via.placeholder.com/600x800" alt="Artwork 1">
+      <h3>Untitled I</h3>
+      <p>Oil on canvas · 800 x 600</p>
+      <a class="btn" href="https://wa.me/27XXXXXXXXX" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <div class="art">
+      <img src="https://via.placeholder.com/600x800" alt="Artwork 2">
+      <h3>Untitled II</h3>
+      <p>Acrylic · 700 x 500</p>
+      <a class="btn" href="https://wa.me/27XXXXXXXXX" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <div class="art">
+      <img src="https://via.placeholder.com/600x800" alt="Artwork 3">
+      <h3>Untitled III</h3>
+      <p>Mixed media · 900 x 700</p>
+      <a class="btn" href="https://wa.me/27XXXXXXXXX" target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+  </section>
+
+  <footer>
+    © Erika Turvey Art Gallery
+  </footer>
+
 </body>
 </html>
